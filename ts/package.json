@@ -1,0 +1,25 @@
+{
+  "name": "basket-mvp-ts",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "airdrop": "ts-node scripts/00_airdrop.ts",
+    "init:base": "ts-node scripts/01_init_base_mint.ts",
+    "init:basket": "ts-node scripts/02_init_basket.ts",
+    "set:nav": "ts-node scripts/03_update_components.ts",
+    "mint": "ts-node scripts/04_mint_shares.ts",
+    "redeem": "ts-node scripts/05_redeem_shares.ts",
+    "div:deposit": "ts-node scripts/06_deposit_dividends.ts",
+    "div:claim": "ts-node scripts/07_claim_dividends.ts"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/spl-token": "^0.4.7",
+    "@solana/spl-token-2022": "^0.4.7",
+    "@solana/web3.js": "^1.95.3",
+    "bs58": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
