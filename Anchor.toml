@@ -1,0 +1,23 @@
+[workspace]
+members = [
+  "programs/basket",
+  "programs/oracle_adapter",
+  "programs/compliance",
+]
+
+## NOTE: These program IDs are placeholders. When you deploy your programs
+## with `anchor deploy` the resulting program IDs should be updated here.
+[programs.localnet]
+basket = "BaSket11111111111111111111111111111111111"
+oracle_adapter = "OraCLE1111111111111111111111111111111111"
+compliance = "CompLY11111111111111111111111111111111111"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+# This section is reserved for Anchor CLI script definitions.

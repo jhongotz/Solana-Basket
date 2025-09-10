@@ -1,0 +1,7 @@
+[workspace]
+members = [
+  "programs/basket",
+  "programs/oracle_adapter",
+  "programs/compliance",
+]
+resolver = "2"
